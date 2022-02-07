@@ -1,0 +1,124 @@
+body{
+    background-color: antiquewhite;
+}
+#container{
+    
+padding: 0.5px;
+   overflow: hidden;
+}
+#header{
+    
+    text-align: center;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    
+}
+body{
+    background: rgb(39, 236, 193);
+}
+#nav{
+    height: 40px;
+    background: darkcyan;
+   
+}
+#nav ul{
+    list-style-type: none;
+    
+    padding: 5px;
+    overflow: hidden;
+  
+}
+#nav a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    text-decoration: none;
+  }
+  
+#nav li{
+    float: left;
+}
+#main{
+    padding: 5px;
+
+}
+#img a{
+    float: left;
+    height: 10%;
+    width: 33%;
+}
+#footer{
+    font-size: 18px;
+    padding: 1em;
+    color: white;
+    background-color:darkcyan;
+    text-align: center;
+    vertical-align:bottom;
+	width: 100%;
+	margin: auto;
+    overflow: hidden;
+}
+#contact{
+    float: left;
+    width: 45%;
+    background-color: beige;
+   
+}
+#vision{
+    float: right;
+    width: 85%;
+    font-size: large;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(255, 255, 255, 0.945);
+}
+#vision table{
+
+    padding: 5px;
+}
+#vision table tr{
+    padding: 1px;
+}
+
+#clear{
+    clear: both;
+}
+#leadership{
+    float: center;
+    padding: 40px;
+    height: 300px;
+    width: 100%;
+}
+#aboutus{
+    float: left;
+    padding: 40px;
+    height: 300px;
+    width: 100%;
+}
+#products{
+    float: right;
+    padding: 40px;
+    height: 300px;
+    width: 84%;
+}
+.srch-btn .button{
+     background-color: #263240; 
+    border: 1px solid #263240;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    display: block;
+}
+form{
+    padding: 5px;
+    text-align: center;
+   font-size: x-large;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

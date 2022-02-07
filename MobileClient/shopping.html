@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <link rel="stylesheet" type="text/css" href="CSS/products.css">
+</head>
+<body>
+    <script src="JS/watchsearch.js"></script>
+    <div id="container">
+        <div id="header">
+            <h1>HASA Watches and CO.</h1>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="shopping.html">Inventory</a></li>
+                <li><a href="orderwatch.html">Order</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="story.html">Our Story</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="signup.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                
+            </ul>
+        </nav>
+        <form>
+            <label id="tbox">Enter the name of the watch OR a keyword
+                <input type="text" name="search" onblur="SearchWatches(this.value)">
+                
+            </label>
+        </form>
+        <div id="vision">
+            
+        <label id="srch"></label>
+  
+        <div id="watchp">            
+        </div>
+        </div>
+        <div class="srch-btn">
+            <input type = "button" class = "button" value = "Citizen" onclick="SearchWatches(this.value)" />
+            <input type = "button" class = "button" value = "Casio"  onclick="SearchWatches(this.value)"/>
+            <input type = "button" class = "button" value = "Fossil" onclick="SearchWatches(this.value)"/>
+        </div>
+        
+        
+        
+    </div>
+    
+    
+</body>
+</html>

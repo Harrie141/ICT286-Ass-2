@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel = "stylesheet" type="text/css" href = "CSS/mainpage.css">
+</head>
+<body>
+
+	<p> Create a User </p>
+		<form name="adminCreateUser" action="../Server/adminCreateUser.php" method="POST">
+
+<div class = "AD_signup_input">
+	<input type="text" name="ADCname" placeholder="Enter user's full name here..." required>
+</div>
+<div class = "AD_signup_input">
+	<input type="email" name="ADCemail" placeholder="Enter user's email here..." required>
+</div>	
+<div class = "AD_signup_input">
+	<input type="text" name="ADCusr" placeholder="Enter user's username..." required>
+</div>
+<div class = "AD_signup_input">	
+	<input type="password" name="ADCpwd" placeholder="Enter a password..." required>
+</div>	
+	<label for ="adminCreateUser"> Account Type: </label>
+	<select name = "acc_type" id= "acc_type">
+		<option value= "User"> User </option>
+		<option value= "Staff"> Staff </option>
+	</select>
+	<button type="submit" name="submit" >Sign Up</button>
+</form>
+</body>
+</html>

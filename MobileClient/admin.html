@@ -1,0 +1,62 @@
+<?php
+session_start();
+if(!isset($_SESSION["sid"])){
+	header("location:/login.html");
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script>
+	let page= ["#q1","#q2",#q3];
+	let curPage= page[0];
+	
+	$(document).ready(function(){
+		var newPage= getPage(window.location.hash);
+		render(newPage);
+
+	$("nav a").click(function(e){
+		e.preventDefault();
+		var newPage= $(this).attr("href");
+		window.location.hash= newPage;
+	});
+		$(window).on("hashchange", function(){
+			var newPage= getPage(window.location.hash);
+			render(newPage);
+	});
+});
+	function render(newPage){
+		if(newPage == curPage);
+			return;
+		$(curPage).hide();
+		$(newPage).show();
+		curPage=newPage;
+}
+	function getPage(hash){
+		let i = page.indexOf(hash);
+		if(i<0 && hash !="") 
+			window.location.hash=page[0];
+		return i <1 ? page[0] : page[i];
+}
+</script>
+</head>
+<body>
+	<div id="content">
+		<nav>
+		<ul>
+			<li><a href="adminCreateUser.html">Create a User</a></li>
+			<li><a href="adminDeleteUser.html">Delete a User</a></li>
+			<li><a href="../Server//adminDisplayUser.php">Show Users</a></li>
+			<li><a href="adminCreateProduct.html">Create a Product Entry</a></li>
+			<li><a href="adminDeleteProduct.html">Delete a Product Entry</a></li>
+			<li><a href="../Server/adminDisplayProduct.php">Show Products</a></li>
+			<li><a href="../Server/logout.php">Log Out</a></li>
+			
+		</ul>
+		</nav>
+	</div>
+    
+</body>
+</html>

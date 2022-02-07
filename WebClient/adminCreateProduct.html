@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel = "stylesheet" type="text/css" href = "CSS/mainpage.css">
+</head>
+<body>
+	<div id="nav">
+		<nav>
+		<ul>
+			<li><a href="adminCreateUser.html">Create a User</a></li>
+			<li><a href="adminDeleteUser.html">Delete a User</a></li>
+			<li><a href="../Server/adminDisplayUser.php" target="_blank">Show Users</a></li>
+			<li><a href="adminCreateProduct.html">Create a Product Entry</a></li>
+			<li><a href="adminDeleteProduct.html">Delete a Product Entry</a></li>
+			<li><a href="../Server/adminDisplayProduct.php" target="_blank">Show Products</a></li>
+			<li><a href="../Server/logout.php">Log Out</a></li>
+		</ul>
+		</nav>
+	</div>
+
+	<h1> Create a User </h1>
+		<form name="adminCreateProduct" action="../Server/adminCreateProduct.php" method="POST">
+
+<div class = "AD_product_input">
+	<input type="text" name="ADCbrand" placeholder="Enter product BRAND..." required>
+</div>
+<div class = "AD_product_input">
+	<input type="text" name="ADCmodel" placeholder="Enter product MODEL..." required>
+</div>	
+<div class = "AD_product_input">
+	<input type="text" name="ADCmvmt" placeholder="Enter product MOVEMENT..." required>
+</div>
+<div class = "AD_product_input">	
+	<input type="text" name="ADCcolour" placeholder="Enter product colour..." required>
+</div>	
+<div class = "AD_product_input">	
+	<input type="number" name="ADCsize" placeholder="Enter product size" required>
+</div>	
+<div class = "AD_product_input">	
+	<input type="number" name="ADCprize" placeholder="Enter product price" required>
+</div>	
+	<button type="submit" name="submit" >Sign Up</button>
+</form>
+</body>
+</html>

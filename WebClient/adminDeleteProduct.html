@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel = "stylesheet" type="text/css" href = "CSS/mainpage.css">
+</head>
+<body>
+	<div id="nav">
+		<nav>
+		<ul>
+			<li><a href="adminCreateUser.html">Create a User</a></li>
+			<li><a href="adminDeleteUser.html">Delete a User</a></li>
+			<li><a href="../Server/adminDisplayUser.php" target="_blank">Show Users</a></li>
+			<li><a href="adminCreateProduct.html">Create a Product Entry</a></li>
+			<li><a href="adminDeleteProduct.html">Delete a Product Entry</a></li>
+			<li><a href="../Server/adminDisplayProduct.php" target="_blank">Show Products</a></li>
+			<li><a href="../Server/logout.php">Log Out</a></li>
+		</ul>
+		</nav>
+	</div>
+
+ 	<h1> Remove a Product from Database</h1>
+	<form name="adminDeleteUser" action="PHP/adminDeleteUser.php" method="POST">
+<div class = "AD_product_input">
+	<input type="text" name="ADDbrand" placeholder="Enter brand of product...">
+</div>
+<div class = "AD_product_input">
+	<input type="text" name="ADDmodel" placeholder="Enter model of product...">
+</div>
+<div class = "AD_product_input1">
+	<button type="submit" name="submit">Delete Product</button>
+</div>
+</form>
+
+
+</body>
+</html>
